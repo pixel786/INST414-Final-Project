@@ -20,7 +20,6 @@ br <- filter(br, br$DIABETE3 == 1 | br$DIABETE3 == 3)
 # if answered 2 (no) for DIABETE3 then NA for DIABAGE2 
 br <- filter(br, br$DIABETE3 == 1 & (br$DIABAGE2 >= 1 & br$DIABAGE2 <= 97) | 
                (br$DIABETE3 == 3 & is.na(br$DIABAGE2)))
-# View(br)
 
 # change values in Education with 9 to NA which represents Refused
 br$EDUCA[br$EDUCA == 9] <- NA
@@ -53,7 +52,6 @@ br$X_RFBMI5[br$X_RFBMI5 == 9] <- NA
 
 # create a new HOUSENUM column with sum of CHILDREN and HHADULT
 br$HOUSENUM <- br$CHILDREN + br$HHADULT
-#View(br)
 
 # save data to a csv to manually select columns in excel we need 
 # not done in R bc select function isn't working for me *** look at endnote
@@ -65,7 +63,6 @@ br <- read.csv("Cleaned_MD_only.csv")
 # remove rows with NAs in all columns except DIABAGE2
 # leaves us with 1139 rows
 br <- drop_na(br, -DIABAGE2)
-#View(br)
 
 # number of those with and without diabetes in our dataset
 # 119 = with diabetes and 1020 = without diabetes
