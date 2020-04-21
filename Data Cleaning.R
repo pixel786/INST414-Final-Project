@@ -75,4 +75,4 @@ table(br$DIABETE3)
 # the following function to select specific columns doesn't work bc 
 # needs only positive or negative numbers and we need NAs in DIABAGE2
 # br <- select(br, br$SEX, br$INCOME2, br$X_RACE, br$DIABETE3, br$DIABAGE2, 
-#               br$EDUCA, br$RENTHOM1, br$EMPLOY1, br$CHILDREN, br$HHADULT, br$X_RFBMI5)
+#               br$EDUCA, br$RENTHOM1, br$EMPLOY1, br$CHILDREN, br$HHADULT, br$X_RFBMI5, br$HOUSENUM)
