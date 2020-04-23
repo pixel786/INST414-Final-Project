@@ -1,16 +1,1 @@
 # INST414-Final-Project
-
-## Data Cleaning copy.R
-12 columns were used: 
-HHADULT 
-DIABETE3 
-SEX 
-EDUCA 
-RENTHOM1 
-EMPLOY1 
-CHILDREN 
-INCOME2 
-X_RACE 
-X_RFBMI5 
-HOUSENUM 
-ENG_COL 
