@@ -104,4 +104,4 @@ no_diab <- sample_n(no_diab, size = 400, replace = F)
 proj_dataset <- rbind(yes_diab, no_diab)
 
 # save the dataset
-write.csv(br, "/Users/zainabsherani/Desktop/INST414/Final Project/project_dataset.csv")
+write.csv(proj_dataset, "/Users/zainabsherani/Desktop/INST414/Final Project/project_dataset.csv")
